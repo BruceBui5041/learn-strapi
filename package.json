@@ -16,6 +16,7 @@
     "@strapi/plugin-users-permissions": "4.9.0",
     "@strapi/strapi": "4.9.0",
     "mysql": "2.18.1",
+    "strapi-plugin-shopify-fields": "^4.0.0-beta4",
     "strapi-stripe": "^3.3.0"
   },
   "author": {

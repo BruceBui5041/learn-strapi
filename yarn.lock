@@ -5009,7 +5009,7 @@ globby@^10.0.1:
     merge2 "^1.2.3"
     slash "^3.0.0"
 
-got@^11.8.2:
+got@^11.1.4, got@^11.8.2:
   version "11.8.6"
   resolved "https://registry.yarnpkg.com/got/-/got-11.8.6.tgz#276e827ead8772eddbcfc97170590b841823233a"
   integrity sha512-6tfZ91bOr7bOXnK7PRDCGBLa1H4U080YHNaAQ2KsMGlLEzRbk44nsZF2E1IeRc3vtJHPVbKCYgdFbaGO2ljd8g==
@@ -6359,7 +6359,7 @@ lodash.isplainobject@4.0.6:
   resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
   integrity sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==
 
-lodash@4.17.21, lodash@^4.17.11, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21:
+lodash@4.17.21, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -7599,7 +7599,7 @@ qs@6.11.0:
   dependencies:
     side-channel "^1.0.4"
 
-qs@6.11.1, qs@^6.10.2, qs@^6.10.3, qs@^6.4.0, qs@^6.9.6:
+qs@6.11.1, qs@^6.10.2, qs@^6.10.3, qs@^6.4.0, qs@^6.5.2, qs@^6.9.6:
   version "6.11.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.11.1.tgz#6c29dff97f0c0060765911ba65cbc9764186109f"
   integrity sha512-0wsrzgTz/kAVIeuxSjnpGC56rzYtr6JT/2BwEvMaPhFIoYa1aGO8LbzuU1R0uUYQkLpWBTOj0l/CLAJB64J6nQ==
@@ -8438,6 +8438,16 @@ shell-quote@^1.7.3:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.8.0.tgz#20d078d0eaf71d54f43bd2ba14a1b5b9bfa5c8ba"
   integrity sha512-QHsz8GgQIGKlRi24yFc6a6lN69Idnx634w49ay6+jA5yFh7a1UY+4Rp6HPx/L/1zcEDPEij8cIsiqR6bQsE5VQ==
 
+shopify-api-node@3.11.1:
+  version "3.11.1"
+  resolved "https://registry.yarnpkg.com/shopify-api-node/-/shopify-api-node-3.11.1.tgz#800fe2065119e5efe7093cba258fb27562b9ab64"
+  integrity sha512-hs3hv7GPCpG7VTphXWPPjHyXhimxpDiCVULVHrRCu9QwED/ZmIueFGw0P0pzTmyBnZkw5QNSWywz8iIq8uaSyg==
+  dependencies:
+    got "^11.1.4"
+    lodash "^4.17.10"
+    qs "^6.5.2"
+    stopcock "^1.0.0"
+
 side-channel@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/side-channel/-/side-channel-1.0.4.tgz#efce5c8fdc104ee751b25c58d4290011fa5ea2cf"
@@ -8655,6 +8665,18 @@ std-env@^3.0.1:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.3.2.tgz#af27343b001616015534292178327b202b9ee955"
   integrity sha512-uUZI65yrV2Qva5gqE0+A7uVAvO40iPo6jGhs7s8keRfHCmtg+uB2X6EiLGCI9IgL1J17xGhvoOqSz79lzICPTA==
+
+stopcock@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/stopcock/-/stopcock-1.1.0.tgz#e0c875d98b819c0baa0a0edf3bcba2d7dc643175"
+  integrity sha512-SNTAH55X9Ra5uE1JIxiPT3WwZiNMTcdCup+7qWOULNVUqiqi62qctNJ+x1R4znNudtkyu8LGc7Ok6Ldt+8N5iQ==
+
+strapi-plugin-shopify-fields@^4.0.0-beta4:
+  version "4.0.0-beta4"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-shopify-fields/-/strapi-plugin-shopify-fields-4.0.0-beta4.tgz#8b618e7fa4d743b2a11cad5182c861a0a38293a4"
+  integrity sha512-6QLAqKOJUvGJbVHPyW0b8gT6WOo96cpjay59+V1PgY0Be9ZLoUgyJcGnH1vjbcPMwrm3PZ2xkpTndbGIvFf5iw==
+  dependencies:
+    shopify-api-node "3.11.1"
 
 strapi-stripe@^3.3.0:
   version "3.3.0"
